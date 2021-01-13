@@ -16,6 +16,59 @@ var Schema = mongoose.Schema;
 mongoose.connect(uri, {useNewUrlParser: true});
 
 
+const MyModel = mongoose.model('Test', new Schema({ name: String }));
+
+
+mongoose.model('posts', new Schema(
+{title:String,
+text:String,
+comments:Object}
+	));
+
+var post = mongoose.model('posts');
+
+
+
+app.get('/', (req, res) => {
+
+//pull blog posts from DB
+//renders home page
+  
+
+  // res.render("home", {renderlist: bloglist});
+  
+});
+
+
+
+
+app.get('/post/:id', (req, res) => {
+    //Render full blog post.
+    
+    res.render('post', {blogPost: postToRender});
+});
+
+
+
+app.get('/compose', (req, res) => {
+	//Page to create blog post
+
+    res.render("compose");
+});
+
+
+
+
+app.post("/compose", (req, res) => {
+	//route to post new blog post.
+
+		// "title": req.body.title,
+		// "body": req.body.body
+
+	res.redirect('/')
+})
+
+
 
 
 app.listen(port, () => {
