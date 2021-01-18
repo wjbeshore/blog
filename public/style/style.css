@@ -1,5 +1,12 @@
 body {
-  color: #c6538c;
+  color: red;
+}
+
+.navbar-text {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

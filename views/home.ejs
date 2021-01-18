@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+
+<h1>Hello, world!</h1>
+
+
+
+<div class="container">
+
+<ul>
+		<% renderList.forEach(element =>{ %> 
+
+			<li>
+				<a href="post/<%=  element._id %>"><%=  element.title %></a>
+				<p><%= element.createdAt %></p>
+				<p><%= element.text %></p>
+
+
+			</li>
+			<hr/>
+		<% }); %>
+</ul>
+
+</div>
+
+
+
+
+<%- include("partials/footer"); -%>
