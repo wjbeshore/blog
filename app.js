@@ -52,7 +52,7 @@ app.get('/post/:id', (req, res) => {
     post.find({ _id : req.params.id}, function(err, data) { 
 		console.log(data);
     //passes array through to home page
-		// res.render("home", {renderList: data});
+		res.render("post", {renderPost: data[0]});
 				
 	});
     // res.render('post', {blogPost: postToRender});

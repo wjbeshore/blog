@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+
+
+
+
+<h1> A Post</h1>
+
+
+
+<div class="card mb-4">
+          		<img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+          		<div>
+            		<h2> <%= renderPost.title %> </h2>
+            		<p> <%= renderPost.createdAt %> </p>
+            <p class="card-text"> <%= renderPost.body %></p>
+            
+          </div>
+          <div class="card-footer text-muted">
+            Posted on January 1, 2020
+          </div>
+        </div>
+
+
+<%- include("partials/footer"); -%>
