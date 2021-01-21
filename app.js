@@ -34,13 +34,12 @@ app.get('/', (req, res) => {
 //pull blog posts from DB
 //renders home page
 	post.find({}, function(err, data) { 
-		// console.log(data);
+
+
     //passes array through to home page
 		res.render("home", {renderList: data});
 				
 	});
-  // res.render("home", {renderlist: bloglist});
-  
 });
 
 
@@ -48,14 +47,13 @@ app.get('/', (req, res) => {
 
 app.get('/post/:id', (req, res) => {
     //Render full blog post.
-    console.log(req.params.id)
     post.find({ _id : req.params.id}, function(err, data) { 
 		console.log(data);
+
     //passes array through to home page
 		res.render("post", {renderPost: data[0]});
 				
 	});
-    // res.render('post', {blogPost: postToRender});
 });
 
 
@@ -72,8 +70,6 @@ app.get('/compose', (req, res) => {
 app.post("/compose", (req, res) => {
 	//route to post new blog post.
 	console.log(req);
-		// "title": req.body.title,
-		// "body": req.body.body
 	let object = {
 	title: req.body.title,
 	text: req.body.body,
@@ -90,7 +86,7 @@ post.create(object, function(err, result) {
   });
 
 	
-})
+});
 
 
 
