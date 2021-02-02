@@ -77,6 +77,8 @@ app.post("/compose", (req, res) => {
 }
 
 post.create(object, function(err, result) {
+
+	// Route to actually post to database
     if (err) {
       console.log(err)
     } else {

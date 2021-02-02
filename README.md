@@ -1,0 +1,1 @@
+Simple personal blog. Backend is Node.js, uses MongoDB and EJS to display posts.
