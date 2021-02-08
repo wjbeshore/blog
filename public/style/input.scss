@@ -1,7 +1,13 @@
-$base-color: #c6538c;
+$base-color: #B9D7D9;
+$secondary-color:  #493736;
+$base-accent: #668284;
+$secondary-accent: #7B3B3B;
+$text: #2A2829;
+
 
 body {
-	color: red;
+	color: $text;
+    background-color: $base-color;
 
 }
 
