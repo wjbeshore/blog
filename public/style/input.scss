@@ -31,3 +31,24 @@ nav a {
 ul {
     list-style-type: none;
 }
+
+.jumbotron {
+    height: 430px;
+    padding: 70px;
+    background-color: lighten($secondary-accent, 20%);
+    h1{
+        font-size: 8em;
+    }
+    p{
+        font-size: 2em;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $text;
+}
+
+a:hover {
+    color: lighten($text, 20%);
+}

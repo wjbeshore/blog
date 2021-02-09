@@ -23,4 +23,25 @@ ul {
   list-style-type: none;
 }
 
+.jumbotron {
+  height: 430px;
+  padding: 70px;
+  background-color: #b07749;
+}
+.jumbotron h1 {
+  font-size: 8em;
+}
+.jumbotron p {
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #070001;
+}
+
+a:hover {
+  color: #6d0010;
+}
+
 /*# sourceMappingURL=style.css.map */
