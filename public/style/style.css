@@ -1,6 +1,6 @@
 body {
-  color: #2A2829;
-  background-color: #B9D7D9;
+  color: #070001;
+  background-color: #E9E0D1;
 }
 
 .navbar-text {
@@ -8,6 +8,19 @@ body {
   position: absolute;
   right: 0;
   margin-right: 8px;
+}
+
+nav {
+  background-color: #33605A;
+  color: #91A398;
+}
+
+nav a {
+  color: #91A398;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */
