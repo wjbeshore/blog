@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 
 //pull blog posts from DB
 //renders home page
-	post.find({}, function(err, data) { 
+post.find({}).sort({ createdAt: 'desc'}).limit(10).exec(function(err,data){ 
 
 
     //passes array through to home page
