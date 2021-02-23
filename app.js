@@ -42,6 +42,13 @@ post.find({}).sort({ createdAt: 'desc'}).limit(10).exec(function(err,data){
 	});
 });
 
+app.get('/compose', (req, res) => {
+	//Page to create blog post
+	console.log("t")
+    res.render("compose");
+});
+
+
 
 
 
@@ -58,11 +65,8 @@ app.get('/:id', (req, res) => {
 
 
 
-app.get('/compose', (req, res) => {
-	//Page to create blog post
 
-    res.render("compose");
-});
+
 
 
 
