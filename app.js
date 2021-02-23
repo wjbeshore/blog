@@ -45,7 +45,7 @@ post.find({}).sort({ createdAt: 'desc'}).limit(10).exec(function(err,data){
 
 
 
-app.get('/post/:id', (req, res) => {
+app.get('/:id', (req, res) => {
     //Render full blog post.
     post.find({ _id : req.params.id}, function(err, data) { 
 		console.log(data);

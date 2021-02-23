@@ -13,9 +13,8 @@
 		<% renderList.forEach(element =>{ %> 
 
 			<li>
-				<h1><a href="post/<%=  element._id %>"><%=  element.title %></a></h1>
-				<p><%= element.createdAt %></p>
-				<p><%= element.text %></p>
+				<h1><a href="<%=  element._id %>"><%=  element.title %></a></h1>
+				<p><%= element.text.substring(0, 50) %></p>
 
 
 			</li>
