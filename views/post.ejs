@@ -1,23 +1,19 @@
 <%- include("partials/header"); -%>
 
-
-
-
-<h1> A Post</h1>
-
-
-
 <div class="card mb-4">
-          		<div>
-            		<h2> <%= renderPost.title %> </h2>
-            		<p> <%= renderPost.createdAt %> </p>
-            <p> <%- renderPost.text %></p>
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h1 class="display-1"><%= renderPost.title %></h1>
+                    <p class="lead">Created by Will</p>
+                  </div>
+                  </div>
+                  <div class="col-9 mx-auto">
+                    <%- renderPost.text %>
+                  </div>
             
-          </div>
           <div class="card-footer text-muted">
-            Posted on January 1, 2020
           </div>
-        </div>
+</div>
 
 
 <%- include("partials/footer"); -%>
